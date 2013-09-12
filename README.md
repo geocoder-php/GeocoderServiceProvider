@@ -1,5 +1,5 @@
-GeocoderServiceProvider
-====================
+GeocoderServiceProvider [![Build Status](https://travis-ci.org/geocoder-php/GeocoderServiceProvider.png)](https://travis-ci.org/geocoder-php/GeocoderServiceProvider)
+=======================
 
 A [Geocoder](http://geocoder-php.org/Geocoder/) service provider for [Silex](http://silex.sensiolabs.org/).
 
@@ -9,8 +9,12 @@ A [Geocoder](http://geocoder-php.org/Geocoder/) service provider for [Silex](htt
 Install the GeocoderServiceProvider adding `geocoder-php/geocoder-service-provider` to your composer.json or from CLI:
 
 ```
-$ php composer.phar require 'geocoder-php/geocoder-service-provider:~1.0'
+$ php composer.phar require 'geocoder-php/geocoder-service-provider:@stable'
 ```
+
+**Protip:** you should browse the
+[`geocoder-php/geocoder-service-provider`](https://packagist.org/packages/geocoder-php/geocoder-service-provider)
+page to choose a stable version to use, avoid the `@stable` meta constraint.
 
 
 ## Usage
@@ -47,6 +51,9 @@ The service provider creates the following services:
 By default, the `geocoder.provider` service uses FreeGeoIP and the
 `geocoder.adapter` service uses the cURL adapter. Override these services to use
 the adapter/provider you want.
+
+See [the Geocoder documentation](http://geocoder-php.org/Geocoder/) for a list
+of available adapters and providers.
 
 
 ## Licence
