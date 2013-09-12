@@ -1,20 +1,11 @@
-GeocoderServiceProvider [![Build Status](https://travis-ci.org/geocoder-php/GeocoderServiceProvider.png)](https://travis-ci.org/geocoder-php/GeocoderServiceProvider)
+GeocoderServiceProvider
 =======================
 
-A [Geocoder](http://geocoder-php.org/Geocoder/) service provider for [Silex](http://silex.sensiolabs.org/).
+[Geocoder](http://geocoder-php.org/Geocoder/) service provider for
+[Silex](http://silex.sensiolabs.org/).
 
-
-## Installation
-
-Install the GeocoderServiceProvider adding `geocoder-php/geocoder-service-provider` to your composer.json or from CLI:
-
-```
-$ php composer.phar require 'geocoder-php/geocoder-service-provider:@stable'
-```
-
-**Protip:** you should browse the
-[`geocoder-php/geocoder-service-provider`](https://packagist.org/packages/geocoder-php/geocoder-service-provider)
-page to choose a stable version to use, avoid the `@stable` meta constraint.
+[![Build
+Status](https://travis-ci.org/geocoder-php/GeocoderServiceProvider.png)](https://travis-ci.org/geocoder-php/GeocoderServiceProvider)
 
 
 ## Usage
@@ -56,6 +47,25 @@ See [the Geocoder documentation](http://geocoder-php.org/Geocoder/) for a list
 of available adapters and providers.
 
 
+## Installation
+
+The recommended way to install StackGeoIp is through
+[Composer](http://getcomposer.org/):
+
+``` json
+{
+    "require": {
+        "geocoder-php/stack-geo-ip": "@stable"
+    }
+}
+```
+
+**Protip:** you should browse the
+[`geocoder-php/geocoder-service-provider`](https://packagist.org/packages/geocoder-php/geocoder-service-provider)
+page to choose a stable version to use, avoid the `@stable` meta constraint.
+
+
 ## Licence
 
-This provider is released under the MIT license.
+GeocoderServiceProvider is released under the MIT License. See the bundled
+LICENSE file for details.
