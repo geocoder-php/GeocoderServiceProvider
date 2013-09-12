@@ -10,9 +10,15 @@
             "homepage": "http://www.kevingomez.fr/"
         }
     ],
+
     "require": {
         "willdurand/geocoder": ">=1.0"
     },
+    "require-dev": {
+        "silex/silex": "~1.0@dev",
+        "phpunit/phpunit": ">=3.7.0"
+    },
+
     "autoload": {
         "psr-0": {
             "Geocoder": "src/"
