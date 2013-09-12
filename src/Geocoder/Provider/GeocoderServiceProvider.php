@@ -1,6 +1,6 @@
 <?php
 
-namespace KPhoen\Provider;
+namespace Geocoder\Provider;
 
 use Silex\Application;
 use Silex\ServiceProviderInterface;

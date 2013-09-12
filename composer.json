@@ -1,5 +1,5 @@
 {
-    "name": "kphoen/geocoder-service-provider",
+    "name": "geocoder-php/geocoder-service-provider",
     "description": "Geocoder service provider for Silex",
     "keywords": ["geocoder", "silex", "service", "provider"],
     "license": "MIT",
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-0": {
-            "KPhoen": "src/"
+            "Geocoder": "src/"
         }
     }
 }

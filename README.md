@@ -6,10 +6,10 @@ A [Geocoder](http://geocoder-php.org/Geocoder/) service provider for [Silex](htt
 
 ## Installation
 
-Install the GeocoderServiceProvider adding `kphoen/geocoder-service-provider` to your composer.json or from CLI:
+Install the GeocoderServiceProvider adding `geocoder-php/geocoder-service-provider` to your composer.json or from CLI:
 
 ```
-$ php composer.phar require 'kphoen/geocoder-service-provider:~1.0'
+$ php composer.phar require 'geocoder-php/geocoder-service-provider:~1.0'
 ```
 
 
@@ -19,7 +19,7 @@ Initialize it using `register`.
 ```php
 <?php
 
-use KPhoen\Provider\GeocoderServiceProvider;
+use Geocoder\Provider\GeocoderServiceProvider;
 
 $app->register(new GeocoderServiceProvider());
 ```
