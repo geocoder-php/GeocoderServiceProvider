@@ -1,0 +1,21 @@
+{
+    "name": "kphoen/geocoder-service-provider",
+    "description": "Geocoder service provider for Silex",
+    "keywords": ["geocoder", "silex", "service", "provider"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kévin Gomez",
+            "email": "contact@kevingomez.fr",
+            "homepage": "http://www.kevingomez.fr/"
+        }
+    ],
+    "require": {
+        "willdurand/geocoder": ">=1.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "KPhoen": "src/"
+        }
+    }
+}
