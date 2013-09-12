@@ -10,7 +10,8 @@ Status](https://travis-ci.org/geocoder-php/GeocoderServiceProvider.png)](https:/
 
 ## Usage
 
-Initialize it using `register`.
+Initialize the service provider using `register()` method:
+
 ```php
 <?php
 
@@ -19,7 +20,8 @@ use Geocoder\Provider\GeocoderServiceProvider;
 $app->register(new GeocoderServiceProvider());
 ```
 
-From PHP:
+Then use it in your controllers:
+
 ```php
 <?php
 
