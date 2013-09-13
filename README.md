@@ -51,13 +51,13 @@ of available adapters and providers.
 
 ## Installation
 
-The recommended way to install StackGeoIp is through
+The recommended way to install GeocoderServiceProvider is through
 [Composer](http://getcomposer.org/):
 
 ``` json
 {
     "require": {
-        "geocoder-php/stack-geo-ip": "@stable"
+        "geocoder-php/geocoder-service-provider": "@stable"
     }
 }
 ```
