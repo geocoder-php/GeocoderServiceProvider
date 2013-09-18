@@ -20,6 +20,9 @@ use Geocoder\Provider\GeocoderServiceProvider;
 $app->register(new GeocoderServiceProvider());
 ```
 
+**N.B.:** be careful to register this provider __after__ the
+`WebProfilerServiceProvider` if you want Geocoder to be integrated in it.
+
 Then use it in your controllers:
 
 ```php
