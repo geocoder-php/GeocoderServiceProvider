@@ -16,7 +16,7 @@ Status](https://travis-ci.org/geocoder-php/GeocoderServiceProvider.png)](https:/
 
 ## Usage
 
-Initialize the service provider using the `register()` method:
+Initialize the service provider using `register()` method:
 
 ```php
 <?php
@@ -26,7 +26,10 @@ use Geocoder\Provider\GeocoderServiceProvider;
 $app->register(new GeocoderServiceProvider());
 ```
 
-Then, use it in your controllers:
+**N.B.:** be careful to register this provider __after__ the
+`WebProfilerServiceProvider` if you want Geocoder to be integrated in it.
+
+Then use it in your controllers:
 
 ```php
 <?php
@@ -57,13 +60,13 @@ of available adapters and providers.
 
 ## Installation
 
-The recommended way to install StackGeoIp is through
+The recommended way to install GeocoderServiceProvider is through
 [Composer](http://getcomposer.org/):
 
 ``` json
 {
     "require": {
-        "geocoder-php/stack-geo-ip": "@stable"
+        "geocoder-php/geocoder-service-provider": "@stable"
     }
 }
 ```
