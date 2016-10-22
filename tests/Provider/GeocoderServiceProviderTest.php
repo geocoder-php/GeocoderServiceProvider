@@ -41,9 +41,11 @@ class GeocoderServiceProviderTest extends \PHPUnit_Framework_TestCase
                 }),
                 $this->equalTo('Geocoder')
             );
-        $app['twig.loader.filesystem'] = $app->share(function() use ($loaderMock) {
+        $app['data_collector.templates'] = function() { return []; };
+        $app['data_collectors'] = function() { return []; };
+        $app['twig.loader.filesystem'] = function() use ($loaderMock) {
             return $loaderMock;
-        });
+        };
 
         $app->register($serviceProvider);
 
