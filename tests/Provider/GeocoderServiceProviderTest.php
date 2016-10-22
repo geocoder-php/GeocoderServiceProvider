@@ -32,7 +32,7 @@ class GeocoderServiceProviderTest extends \PHPUnit_Framework_TestCase
         $app['data_collector.templates'] = array();
         $app['data_collectors'] = array();
 
-        $loaderMock = $this->getMock('\Twig_Loader_Filesystem');
+        $loaderMock = $this->createMock('\Twig_Loader_Filesystem');
         $loaderMock->expects($this->once())
             ->method('addPath')
             ->with(
